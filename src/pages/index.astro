@@ -1,8 +1,19 @@
 ---
 import NavbarComp from '../components/NavbarComp';  
+import Welcome from '../components/Welcome';  
 import Layout from '../layouts/Layout.astro';
+
+import CustomButton from "../components/ButtonComp";
 ---
 <Layout>
 	<NavbarComp client:load />
- 
+	<CustomButton color="primary" label="Get It now" onClick={console.log("hi")} client:load /> 
+
+	<CustomButton color="primary" label="Get It now" size="sm" icon="" />
+	<CustomButton color="secondary" label="Get It now" size="sm" radius="full" />
+	<CustomButton  label="Get It now" size="md" variant="bordered" otherClasses="border" />
+	<CustomButton color="primary" label="Get It now" size="sm" radius="full" isLoading  />
+	<CustomButton color="primary" label="Get It now" size="md" radius="lg" otherClasses='w-full' />
+
+	<Welcome />
 </Layout>

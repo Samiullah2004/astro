@@ -1,25 +1,14 @@
  
 import {Button} from "@heroui/react"; 
-import NavbarComp from "./NavbarComp";
+import NavbarComp from "./NavbarComp"; 
+import CustomButton from "./ButtonComp";
 const Welcome = () => {
   return (
 	<div className=''>
 	<NavbarComp client:load />
-
-	 <div className="bg-red-400 mt-20">
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugit in optio voluptate tenetur a, unde ad quas aliquam veniam.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugit in optio voluptate tenetur a, unde ad quas aliquam veniam.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugit in optio voluptate tenetur a, unde ad quas aliquam veniam.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugit in optio voluptate tenetur a, unde ad quas aliquam veniam.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugit in optio voluptate tenetur a, unde ad quas aliquam veniam.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugit in optio voluptate tenetur a, unde ad quas aliquam veniam.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugit in optio voluptate tenetur a, unde ad quas aliquam veniam.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugit in optio voluptate tenetur a, unde ad quas aliquam veniam.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugit in optio voluptate tenetur a, unde ad quas aliquam veniam.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugit in optio voluptate tenetur a, unde ad quas aliquam veniam.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugit in optio voluptate tenetur a, unde ad quas aliquam veniam.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugit in optio voluptate tenetur a, unde ad quas aliquam veniam.</p>
-	 </div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, officia ipsa, provident incidunt sapiente reiciendis voluptas iste fuga facilis temporibus ex eius repellendus! Eum necessitatibus quas distinctio dolores? Eos, vitae.</p>
+	   
+		<CustomButton color="primary" label="Get It now" onClick={() => alert("hi")}  client:load />
 	</div>
   )
 }
