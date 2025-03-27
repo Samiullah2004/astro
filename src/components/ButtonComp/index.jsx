@@ -5,24 +5,23 @@ const CustomButton = ({
   variant = "primary",
   otherClasses = "",
   label,
-  onClick,
-  href,
-  icon,
+  onClick = undefined, 
+  href = undefined,  
+  icon = undefined, 
   ...props
 }) => {
   const buttonClasses = classNames(
     "cursor-pointer font-instrument-sans transition-all duration-300 ease-in-out group relative overflow-hidden flex items-center gap-2",
     {
-      "border border-2-[#302952] hover:bg-[#302952] hover:text-white": variant === "bordered",
+      "border border-[#302952] hover:bg-[#302952] hover:text-white": variant === "bordered",
       "bg-primary px-5 py-2 text-white hover:bg-primary-dark": variant === "primary",
     },
     otherClasses
   );
 
   const handleClick = (e) => {
-    console.log("Button clicked!");
     if (onClick) {
-      onClick(e); 
+      onClick(e);
     }
   };
 
